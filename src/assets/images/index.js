@@ -52,11 +52,18 @@ import _QH from './cards/QH.png';
 import _QS from './cards/QS.png';
 
 import card from './cards/2C.png';
+import defaultProfile from './default-profile.jpg';
+import pokerDesk from './poker-desk.jpg';
+import exit from './exit.png';
+import chip from './chip.png';
 
-export const test = {
-	imageT: _2C,
+export const generalImage = {
+	defaultProfile,
+	pokerDesk,
+	exit,
+	chip,
 };
-export const images = {
+export const cardsImages = {
 	'10C': _10C,
 	'10D': _10D,
 	'10H': _10H,

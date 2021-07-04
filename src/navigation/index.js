@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 // components
 import Login from '../screens/Login/Login';
+import Home from '../screens/Home/Home';
 import Game from '../screens/Game/Game';
 
 const Stack = createStackNavigator();
@@ -30,6 +31,7 @@ const MainStack = ({ isConnect = false }) => {
 				) : (
 					<>
 						<Stack.Screen name='Login' component={Login} />
+						<Stack.Screen name='Home' component={Home} />
 						<Stack.Screen name='Game' component={Game} />
 					</>
 				)}

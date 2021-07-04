@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
 	SafeAreaView,
 	StyleSheet,
@@ -8,11 +8,13 @@ import {
 	StatusBar,
 	Image,
 } from 'react-native';
-import Game from './screens/Game/Game';
-import Login from './screens/Login/Login';
+import Orientation from 'react-native-orientation';
 import MainStack from './navigation';
 
 const App = () => {
+	useEffect(() => {
+		Orientation.lockToLandscape();
+	}, []);
 	return (
 		<>
 			<StatusBar barStyle='dark-content' />
